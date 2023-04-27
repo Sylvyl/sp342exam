@@ -10,6 +10,7 @@ function checkNID() {
 
 function checkTicketNo() {
   let num = (document.getElementById("ticknum").value).trim();
+  // แก้ไขข้อมูลให้จองตั๋วได้ไม่เกิน 5 ใบเท่านั้น
   if (isNaN(num) || num > 5 || num < 1 ) {
     return false;
   } else {
